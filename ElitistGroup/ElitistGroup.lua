@@ -480,7 +480,7 @@ function ElitistGroup:GetGeneralSummaryTooltip(equipmentData, gemData, enchantDa
 	-- Enchants
 	if( enchantData.noData ) then
 		enchantTooltip = L["Enchants: |cffffffffThe player does not have any enchants|r"]
-	elseif( enchantData.totalBad > 0 and enchantData.totalbad ~= nil) then
+	elseif( enchantData.totalBad > 0 and enchantData.totalBad ~= nil) then
 		table.wipe(tempList)
 		table.insert(tempList, string.format(L["Enchants: |cffffffff%d bad|r"], enchantData.totalBad))
 		
