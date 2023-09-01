@@ -457,9 +457,6 @@ SlashCmdList["ELITISTGROUP"] = function(msg)
 	elseif( cmd == "rate" ) then
 		SlashCmdList["ELITISTGROUPRATE"]("")
 		return
-	elseif( cmd == "leader" and IsAddOnLoaded("ElitistGroupLeader") ) then
-		SlashCmdList["EGLEADER"]("")
-		return
 	elseif( cmd == "reset" ) then
 		if( not StaticPopupDialogs["ELITISTGROUP_CONFIRM_RESET"] ) then
 			StaticPopupDialogs["ELITISTGROUP_CONFIRM_RESET"] = {
@@ -516,10 +513,6 @@ SlashCmdList["ELITISTGROUP"] = function(msg)
 		DEFAULT_CHAT_FRAME:AddMessage(L["/eg report - Opens the reporting UI for sending to chat summaries on your group"])
 		DEFAULT_CHAT_FRAME:AddMessage(L["/eg summary - Displays the summary page for your party or raid"])
 		DEFAULT_CHAT_FRAME:AddMessage(L["/eg rate - Opens the rating panel for your group"])
-		if( IsAddOnLoaded("ElitistGroupLeader") ) then
-			DEFAULT_CHAT_FRAME:AddMessage(L["/eg leader - Opens the specialized group manager/former UI"])
-		end
-		
 		DEFAULT_CHAT_FRAME:AddMessage(L["/eg <name> - When <name> is passed opens up the player viewer for that person, otherwise it opens it on yourself"])
 		return
 	end
