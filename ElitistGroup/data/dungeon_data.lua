@@ -366,7 +366,7 @@ local function loadData()
 			[4658] = 20, -- Toravon the Ice Watcher kills (Wintergrasp 25 player)
 		},
 
-			-- 10 man heroic/hard mode raids
+		-- 10 man heroic/hard mode raids
 		{name = L["Raids"], parent = true, id = "10-man-hard", players = 10, heroic = true},
 		{name = L["Ulduar"], childOf = "10-man-hard", heroic = true, id = "ulduar-10m-h", cascade = "ulduar-10m-n", players = 10,
 			experienced = 60, -- 4 of the 7 hard modes, or one zero light + two other misc hard modes

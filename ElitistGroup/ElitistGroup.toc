@@ -1,10 +1,11 @@
 ## Interface: 30300
 ## Title: Elitist Group
-## Notes: (Modified for Warmane.com) Provides quick access to information on your group and their equipment, enchant and gem choices.
+## Notes: (Armory for Warmane.com) Provides quick access to information on your group and their equipment, enchant and gem choices.
 ## Author: Shadowed, modified by Avarishd
 ## OptionalDeps: Ace3
 ## SavedVariables: ElitistGroupDB
 ## Version: 2.0
+## X-Website: https://github.com/avarishd/ElitistGroup-WotLK
 
 #@no-lib-strip@
 libs\LibStub\LibStub.lua

@@ -1,15 +1,16 @@
 # Elitist Group
 
   **Based on latest version of https://www.wowace.com/projects/elitistgroup by shadowed103.**
+  
+  (This version still works, but it has some issues)
 ### Armory links to https://warmane.com/
-#### Todo:
-1. Fix notes not working sometimes
 
 #### What is Elitist Group?
 
 Elitist Group's goal is to shift focus away from single scores which don't tell you anything about the users choice of gear. Instead of a single score, Elitist Group shows you a variety of data from the players experience per dungeons and raid (can be broken down by boss), to whether their choice of equipment, enchants or gems fit their spec. You can still see the players average item level as well, but it's not the primary focus and only there to give you an idea of a players gear.
 
    ![](https://i.imgur.com/v2b24he.png)
+   
 All user data will be compressed on logout to keep the database size more manageable. However, a variety of database management options are included to delete data after a certain period of time, or not save data on people from another server.
 
 ~~Interested in people being able to see your mains experience or request your data, but don't want the entire addon? Take a look at Elitist Group Sender, which does nothing more than respond to experience or data requests.~~ **Note: Can maybe look into it eventually.**

@@ -25,12 +25,12 @@ function ElitistGroup:OnInitialize()
 				keepInspects = 1,
 			},
 			inspect = {
-				window = false,
+				window = true,
 				tooltips = true,
 			},
 			database = {
 				saveForeign = true,
-				pruneBasic = 30,
+				pruneBasic = 15,
 				pruneFull = 120,
 				ignoreBelow = 80,
 			},
@@ -41,7 +41,7 @@ function ElitistGroup:OnInitialize()
 				enabled = true,
 				gearRequests = true,
 				databaseSync = false,
-				databaseThreshold = 4,
+				databaseThreshold = 5,
 				autoNotes = true,
 				autoMain = true,
 				trustGuild = true,
@@ -158,6 +158,7 @@ function ElitistGroup:OnInitialize()
 			ElitistGroup.db.profile.helped = true
 			ElitistGroup:Print(L["Welcome! Type /elitistgroup help (or /eg help) to see a list of available slash commands."])
 			DEFAULT_CHAT_FRAME:AddMessage(L["Play on alts all the time? Check out /eg config -> Main/alt experience to have your mains achievements carry over."])
+			DEFAULT_CHAT_FRAME:AddMessage(GetAddOnMetadata("ElitistGroup","X-Website"))
 			ElitistGroup:UnregisterEvent("PLAYER_ENTERING_WORLD")
 		end)
 	end

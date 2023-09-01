@@ -39,7 +39,7 @@ local function loadOptions()
 					help = {
 						order = 1,
 						type = "description",
-						name = L["Trust list and addon communication options can be found in the menu to your left."],
+						name = L["Trust list and addon communication options can be found in the menu to your left."].."\n\nFor Latest Version visit:\nhttps://github.com/avarishd/ElitistGroup-WotLK",
 					}
 				},
 			},

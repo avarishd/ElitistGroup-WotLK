@@ -1212,12 +1212,12 @@ function Users:CreateUI()
 	frame.titleBar = frame:CreateTexture(nil, "ARTWORK")
 	frame.titleBar:SetTexture("Interface\\DialogFrame\\UI-DialogBox-Header")
 	frame.titleBar:SetPoint("TOP", 0, 8)
-	frame.titleBar:SetWidth(350)
+	frame.titleBar:SetWidth(300)
 	frame.titleBar:SetHeight(45)
 
 	frame.title = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 	frame.title:SetPoint("TOP", 0, 0)
-	frame.title:SetText("Elitist Group Warmane v"..ElitistGroup:GetVersion())
+	frame.title:SetText("Elitist Group v"..ElitistGroup:GetVersion())
 
 	-- Close button
 	local button = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
