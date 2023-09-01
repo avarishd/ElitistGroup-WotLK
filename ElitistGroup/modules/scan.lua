@@ -9,7 +9,7 @@ ElitistGroup.VALID_NOTE_FIELDS = {["time"] = "number", ["role"] = "number", ["ra
 ElitistGroup.MAX_LINK_LENGTH = 80
 ElitistGroup.MAX_NOTE_LENGTH = 256
 
-local INSPECT_RESET_TIMER = 11
+local INSPECT_RESET_TIMER = 0
 local INSPECTS_PER_INTERVAL = 6
 local inspectsLeft, inspectResetAt = INSPECTS_PER_INTERVAL
 

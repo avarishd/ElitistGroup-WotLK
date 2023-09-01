@@ -243,7 +243,6 @@ local function OnClick(self)
 	end
 end
 
---[[
 local function showElitistArmoryURL()
 	local names, realms = {(UnitName("player"))}, {GetRealmName()}
 	local diffRealms, realmText
@@ -269,7 +268,6 @@ local function showElitistArmoryURL()
 	
 	ElitistGroup:ShowURLPopup(string.format("http://elitistarmory.com/gs/%s/%s/%s", ElitistGroup:GetRegion(), string.gsub(realmText, " ", "%%20"), string.gsub(table.concat(names, ","), " ", "%%20")), true)
 end
-]]
 
 local backdrop = {bgFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeFile = "Interface\\ChatFrame\\ChatFrameBackground", edgeSize = 1}
 function Summary:CreateSingle(id)
@@ -406,7 +404,6 @@ function Summary:CreateUI()
 	frame.title:SetPoint("TOP", 0, 0)
 	frame.title:SetText("Elitist Group")
 
---[[
 	local button = CreateFrame("Button", nil, frame, "GameMenuButtonTemplate")
 	button:SetWidth(40)
 	button:SetHeight(18)
@@ -416,7 +413,6 @@ function Summary:CreateUI()
 	button:SetScript("OnEnter", OnEnter)
 	button:SetScript("OnLeave", OnLeave)
 	button.tooltip = L["View the group on ElitistArmory.com"]
-]]
 
 	-- Close button
 	local button = CreateFrame("Button", nil, frame, "UIPanelCloseButton")

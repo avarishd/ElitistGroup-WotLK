@@ -276,7 +276,6 @@ function Summary:Update()
 	end
 end
 
---[[
 local function showElitistArmoryURL()
 	local names, realms = {}, {}
 	local diffRealms, realmText
@@ -302,7 +301,6 @@ local function showElitistArmoryURL()
 	
 	ElitistGroup:ShowURLPopup(string.format("http://elitistarmory.com/gs/%s/%s/%s", ElitistGroup:GetRegion(), string.gsub(realmText, " ", "%%20"), string.gsub(table.concat(names, ","), " ", "%%20")), true)
 end
-]]
 
 function Summary:CreateUI()
 	if( self.frame ) then
@@ -383,7 +381,6 @@ function Summary:CreateUI()
 	frame.inspectQueue = frame:CreateFontString(nil, "ARTWORK", "GameFontNormal")
 	frame.inspectQueue:SetPoint("TOPLEFT", frame, "TOPLEFT", 11, -14)
 
---[[
 	local button = CreateFrame("Button", nil, frame, "GameMenuButtonTemplate")
 	button:SetWidth(40)
 	button:SetHeight(18)
@@ -393,7 +390,7 @@ function Summary:CreateUI()
 	button:SetScript("OnEnter", OnEnter)
 	button:SetScript("OnLeave", OnLeave)
 	button.tooltip = L["View the group on ElitistArmory.com"]
-]]
+
 	-- Close button
 	local button = CreateFrame("Button", nil, frame, "UIPanelCloseButton")
 	button:SetPoint("TOPRIGHT", -3, -3)

@@ -67,9 +67,7 @@ function ElitistGroup:OnInitialize()
 	self.db.RegisterCallback(self, "OnProfileShutdown", "OnProfileShutdown")
 	self.db.RegisterCallback(self, "OnProfileReset", "OnProfileReset")
 	
-	self.version = "v1.7.7-1-ge9aa6fe"
-	self.version = string.match(self.version, "project%-version") and "repo" or string.gsub(self.version, "v", "")
-	self.version = string.split("-", self.version, 2)
+	self.version = GetAddOnMetadata("ElitistGroup","Version")
 
 	self.playerID = string.format("%s-%s", UnitName("player"), GetRealmName())
 	self.tooltip = CreateFrame("GameTooltip", "ElitistGroupTooltip", UIParent, "GameTooltipTemplate")
@@ -245,18 +243,21 @@ function ElitistGroup:ShowURLPopup(url, long)
 	StaticPopup_Show("ELITISTGROUP_URL", nil, nil, url)
 end
 
+
+--[[
 local locale = GetLocale()
 function ElitistGroup:GetRegion()
 	local region = string.match(GetCVar("realmList"), "^(.-)%.")
 	return locale == "koKR" and "kr" or locale == "zhCN" and "cn" or locale == "zhTW" and "tw" or region
 end
+--]]
 
 function ElitistGroup:GetArmoryURL(realm, name)
-	local region = self:GetRegion()
+	--local region = self:GetRegion()
 	realm = string.gsub(realm, " ", "%%20")
 	name = string.gsub(name, " ", "%%20")
 	
-	return region and realm and name and string.format("http://elitistarmory.com/%s/%s/%s", region, realm, name)
+	return --[[region and--]] realm and name and string.format("https://armory.warmane.com/character/%s/%s/summary", name, realm)
 end
 
 -- Permissions, do we trust the person?
