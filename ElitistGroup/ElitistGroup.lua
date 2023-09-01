@@ -67,7 +67,9 @@ function ElitistGroup:OnInitialize()
 	self.db.RegisterCallback(self, "OnProfileShutdown", "OnProfileShutdown")
 	self.db.RegisterCallback(self, "OnProfileReset", "OnProfileReset")
 	
-	self.version = GetAddOnMetadata("ElitistGroup","Version")
+	function ElitistGroup:GetVersion()
+		return GetAddOnMetadata("ElitistGroup","Version")
+ 	end	
 
 	self.playerID = string.format("%s-%s", UnitName("player"), GetRealmName())
 	self.tooltip = CreateFrame("GameTooltip", "ElitistGroupTooltip", UIParent, "GameTooltipTemplate")
@@ -243,21 +245,11 @@ function ElitistGroup:ShowURLPopup(url, long)
 	StaticPopup_Show("ELITISTGROUP_URL", nil, nil, url)
 end
 
-
---[[
-local locale = GetLocale()
-function ElitistGroup:GetRegion()
-	local region = string.match(GetCVar("realmList"), "^(.-)%.")
-	return locale == "koKR" and "kr" or locale == "zhCN" and "cn" or locale == "zhTW" and "tw" or region
-end
---]]
-
 function ElitistGroup:GetArmoryURL(realm, name)
-	--local region = self:GetRegion()
 	realm = string.gsub(realm, " ", "%%20")
 	name = string.gsub(name, " ", "%%20")
 	
-	return --[[region and--]] realm and name and string.format("https://armory.warmane.com/character/%s/%s/summary", name, realm)
+	return realm and name and string.format("https://armory.warmane.com/character/%s/%s/summary", name, realm)
 end
 
 -- Permissions, do we trust the person?
