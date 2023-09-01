@@ -391,7 +391,9 @@ function ElitistGroup:GetGearSummaryTooltip(equipment, enchantData, gemData)
 		elseif( type(arg) == "string" ) then
 			table.insert(tempList, string.format(L["%s - |cffffffff%s|r gem"], select(2, GetItemInfo(gemLink)) or gemLink, self.Items.itemRoleText[arg] or arg))
 		else
-			table.insert(tempList, string.format(L["%s - |cffffffff%s|r quality gem"], select(2, GetItemInfo(gemLink)) or gemLink, _G["ITEM_QUALITY" .. arg .. "_DESC"]))
+			if arg then
+				table.insert(tempList, string.format(L["%s - |cffffffff%s|r quality gem"], select(2, GetItemInfo(gemLink)) or gemLink, _G["ITEM_QUALITY" .. arg .. "_DESC"]))
+			end
 		end
 	end
 	
@@ -459,14 +461,16 @@ function ElitistGroup:GetGeneralSummaryTooltip(equipmentData, gemData, enchantDa
 			local fullItemLink, arg = gemData[i], gemData[i + 2]
 			local equipText = self.db.profile.general.showSlotName and equipmentData[fullItemLink] or fullItemLink
 			
-			if( arg == "buckle" ) then
+			if (arg == "buckle") then
 				table.insert(tempList, string.format(L["%s - Missing belt buckle or gem"], equipText))
-			elseif( arg == "missing" ) then
+			elseif (arg == "missing") then
 				table.insert(tempList, string.format(L["%s - |cffffffff%d|r missing |4gem:gems;"], equipText, gemData[i + 1]))
-			elseif( type(arg) == "string" ) then
+			elseif (type(arg) == "string") then
 				table.insert(tempList, string.format(L["%s - |cffffffff%s|r gem"], equipText, self.Items.itemRoleText[arg] or arg))
 			else
-				table.insert(tempList, string.format(L["%s - |cffffffff%s|r quality gem"], equipText, _G["ITEM_QUALITY" .. arg .. "_DESC"]))
+				if arg then
+					table.insert(tempList, string.format(L["%s - |cffffffff%s|r quality gem"], equipText, _G["ITEM_QUALITY" .. arg .. "_DESC"]))
+				end
 			end
 		end
 		
@@ -476,7 +480,7 @@ function ElitistGroup:GetGeneralSummaryTooltip(equipmentData, gemData, enchantDa
 	-- Enchants
 	if( enchantData.noData ) then
 		enchantTooltip = L["Enchants: |cffffffffThe player does not have any enchants|r"]
-	elseif( enchantData.totalBad > 0 ) then
+	elseif( enchantData.totalBad > 0 and enchantData.totalbad ~= nil) then
 		table.wipe(tempList)
 		table.insert(tempList, string.format(L["Enchants: |cffffffff%d bad|r"], enchantData.totalBad))
 		
@@ -666,7 +670,9 @@ function ElitistGroup:GetGearSummary(userData)
 			
 			gems.pass = nil
 			gems.totalBad = gems.totalBad + 1
-			gems[fullItemLink] = itemLink
+			if gems[fullItemLink] then
+				gems[fullItemLink] = itemLink
+			end
 		end
 	end
 	
