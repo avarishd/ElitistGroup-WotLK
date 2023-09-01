@@ -1,11 +1,7 @@
-
-  
-
 # Elitist Group 3.3.5a
 
-  
+![logo](https://github.com/avarishd/ElitistGroup-WotLK/assets/46330494/fb0e6c7d-41bc-4f33-96e1-7a7bd07c9e36)
 
-  
 
 **Based on latest version of https://www.wowace.com/projects/elitistgroup by shadowed103.**
 
