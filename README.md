@@ -1,11 +1,7 @@
-
-  
-
 # Elitist Group 3.3.5a
 
-  
+![logo](https://github.com/avarishd/ElitistGroup-WotLK/assets/46330494/fb0e6c7d-41bc-4f33-96e1-7a7bd07c9e36)
 
-  
 
 **Based on latest version of https://www.wowace.com/projects/elitistgroup by shadowed103.**
 
@@ -15,7 +11,7 @@
 
 #### What is Elitist Group?
 
-Elitist Group's goal is to shift focus away from single scores which don't tell you anything about the users choice of gear. Instead of a single score, Elitist Group shows you a variety of data from the players experience per dungeons and raid (can be broken down by boss), to whether their choice of equipment, enchants or gems fit their spec. You can still see the players average item level as well, but it's not the primary focus and only there to give you an idea of a players gear.
+Elitist Group's goal is to shift focus away from single scores which don't tell you anything about the users, outside of gear. Instead of a single score, Elitist Group shows you a variety of data from the players experience per dungeons and raid (can be broken down by boss), to whether their choice of equipment, enchants or gems fit their spec. You can still see the players average item level as well, but it's not the primary focus and only there to give you an idea of a players gear.
 
   
 
