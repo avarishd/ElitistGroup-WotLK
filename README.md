@@ -5,6 +5,8 @@
 #### Todo:
 1. Fix notes not working sometimes
 
+#### What is Elitist Group?
+
 Elitist Group's goal is to shift focus away from single scores which don't tell you anything about the users choice of gear. Instead of a single score, Elitist Group shows you a variety of data from the players experience per dungeons and raid (can be broken down by boss), to whether their choice of equipment, enchants or gems fit their spec. You can still see the players average item level as well, but it's not the primary focus and only there to give you an idea of a players gear.
 
    ![](https://i.imgur.com/v2b24he.png)

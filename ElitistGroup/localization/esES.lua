@@ -170,7 +170,7 @@ L["/eg report - Opens the reporting UI for sending to chat summaries on your gro
 L["/eg send <name> - Sends your gear to another Elitist Group user"] = "/eg send <nombre> - envia tu equipo a otro miembro de Elitist Group "
 L["/eg summary - Displays the summary page for your party or raid"] = "/eg summary - Muestra la pagina de sumario para tu grupo o banda"
 L["Elemental"] = "Elemental"
-L["Elitist Group (%s): showing %d players, check out http://Warmane.com for more info. Format is, [name] (%s)"] = "Elitist Group (%s): mostrando %d jugadores, revisa  http://Warmane.com para mas informacino. el formato es [nombre] (%d)"
+L["Elitist Group (%s): showing %d players, check out https://github.com/avarishd/ElitistGroup-WotLK for more info. Format is, [name] (%s)"] = "Elitist Group (%s): mostrando %d jugadores, revisa  https://github.com/avarishd/ElitistGroup-WotLK para mas informacino. el formato es [nombre] (%d)"
 L["Emalon the Storm Watcher"] = "Emalon el vigilante de la tormenta"
 L["Emalon, Vault"] = "Emalon, Camara"
 L["Enable comms"] = "Activar comentarios"

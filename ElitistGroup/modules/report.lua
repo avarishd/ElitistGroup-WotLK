@@ -156,7 +156,7 @@ local function reportSummary(self)
 		target = "CHANNEL"
 	end
 	
-	ChatThrottleLib:SendChatMessage("BULK", "EG", string.format(L["Elitist Group (%s): showing %d players, check out http://elitistarmory.com for more info. Format is, [name] (%s)"], ElitistGroup.version, #(queuedData), outputHelp), target, nil, channelID)
+	ChatThrottleLib:SendChatMessage("BULK", "EG", string.format(L["Elitist Group (%s): showing %d players, check out https://github.com/avarishd/ElitistGroup-WotLK for more info. Format is, [name] (%s)"], ElitistGroup:GetVersion(), #(queuedData), outputHelp), target, nil, channelID)
 	
 	-- Now do all of the actual work
 	local message = ""
@@ -489,22 +489,22 @@ function Report:CreateUI()
 		local filters = {}
 		local itemLevel = ElitistGroup.db.profile.report.itemLevel
 		if( itemLevel ) then
-			table.insert(filters, string.format(L["average item level below %d"], itemLevel))
+			table.insert(filters, string.format(L["average item level below %d"].."\n\n", itemLevel))
 		end
 
 		local equipment = ElitistGroup.db.profile.report.equipment
 		if( equipment ) then
-			table.insert(filters, string.format(L["%d%% or more bad equipped items"], equipment * 100))
+			table.insert(filters, string.format(L["%d%% or more bad equipped items"].."\n\n", equipment * 100))
 		end
 		
 		local enchants = ElitistGroup.db.profile.report.enchants
 		if( enchants ) then
-			table.insert(filters, string.format(L["%d%% or more bad enchants"], enchants * 100))
+			table.insert(filters, string.format(L["%d%% or more bad enchants"].."\n\n", enchants * 100))
 		end
 		
 		local gems = ElitistGroup.db.profile.report.gems
 		if( gems ) then
-			table.insert(filters, string.format(L["%d%% or more bad gems"], gems * 100))
+			table.insert(filters, string.format(L["%d%% or more bad gems"].."\n\n", gems * 100))
 		end
 		
 		if( #(filters) == 0 ) then

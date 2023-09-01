@@ -168,7 +168,7 @@ L["/eg report - Opens the reporting UI for sending to chat summaries on your gro
 L["/eg send <name> - Sends your gear to another Elitist Group user"] = "/eg send <имя_персонажа> - Отправляет данные вашей экипировки другому пользователю Elitist Group"
 L["/eg summary - Displays the summary page for your party or raid"] = "/eg summary - Показывает окно сводки для вашей группы или рейда"
 L["Elemental"] = "Укрощение стихии"
-L["Elitist Group (%s): showing %d players, check out http://Warmane.com for more info. Format is, [name] (%s)"] = "Elitist Group (%s): показывает %d игроков, для большей информации посетите http://Warmane.com. Фомат, [name] (%s)"
+L["Elitist Group (%s): showing %d players, check out https://github.com/avarishd/ElitistGroup-WotLK for more info. Format is, [name] (%s)"] = "Elitist Group (%s): показывает %d игроков, для большей информации посетите https://github.com/avarishd/ElitistGroup-WotLK. Фомат, [name] (%s)"
 L["Emalon the Storm Watcher"] = "Эмалон Страж Бури"
 L["Emalon, Vault"] = "Эмалон, Склеп"
 L["Enable comms"] = "Включить связь"

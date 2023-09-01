@@ -167,7 +167,7 @@ L["/eg report - Opens the reporting UI for sending to chat summaries on your gro
 L["/eg send <name> - Sends your gear to another Elitist Group user"] = "/eg send <name> - 發送你的裝備差距至另外 Elitist Group 使用者"
 L["/eg summary - Displays the summary page for your party or raid"] = "/eg summary - 顯示你的隊伍或團隊摘要頁面"
 L["Elemental"] = "元素"
-L["Elitist Group (%s): showing %d players, check out http://Warmane.com for more info. Format is, [name] (%s)"] = "Elitist Group (%s): 顯示 %d 的玩家, 檢查 http://Warmane.com 更多資訊。格式, [name] (%s)"
+L["Elitist Group (%s): showing %d players, check out https://github.com/avarishd/ElitistGroup-WotLK for more info. Format is, [name] (%s)"] = "Elitist Group (%s): 顯示 %d 的玩家, 檢查 https://github.com/avarishd/ElitistGroup-WotLK 更多資訊。格式, [name] (%s)"
 L["Emalon the Storm Watcher"] = "『風暴看守者』艾瑪隆"
 L["Emalon, Vault"] = "艾瑪隆，穹殿"
 L["Enable comms"] = "啟用通信"

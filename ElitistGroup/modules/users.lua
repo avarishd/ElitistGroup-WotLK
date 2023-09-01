@@ -1083,7 +1083,6 @@ local function showWarmaneArmoryURL(self)
 		ElitistGroup:Print(L["Cannot find URL for this player, don't seem to have name, server or region data."])
 		return
 	end
-	
 	ElitistGroup:ShowURLPopup(url)
 end
 
